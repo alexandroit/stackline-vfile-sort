@@ -1,28 +1,52 @@
 # @stackline/vfile-sort
 
-Independent maintenance fork of `vfile-sort@3.0.1`, preserving its API and published type declarations.
+> vfile utility to sort messages by line/column.
 
-```sh
+[![npm version](https://img.shields.io/npm/v/@stackline/vfile-sort.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/vfile-sort)
+[![license](https://img.shields.io/npm/l/@stackline/vfile-sort.svg?style=flat-square)](https://github.com/alexandroit/stackline-vfile-sort)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-vfile-sort-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-vfile-sort)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/vfile-sort/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
+
+**[Documentation](https://alexandro.net/docs/vanilla/vfile-sort/)** | **[npm](https://www.npmjs.com/package/@stackline/vfile-sort)** | **[Issues](https://github.com/alexandroit/stackline-vfile-sort/issues)** | **[Repository](https://github.com/alexandroit/stackline-vfile-sort)**
+
+**Current package version:** `1.0.1`
+
+---
+
+## Why this package?
+
+`@stackline/vfile-sort` is the Stackline-maintained distribution of `vfile-sort@3.0.1`. It is an independent continuation of [vfile-sort](https://github.com/vfile/vfile-sort); original authors and licenses remain credited below.
+
+## Compatibility
+
+| Item | Value |
+| :--- | :--- |
+| Package | `@stackline/vfile-sort@1.0.1` |
+| API target | `vfile-sort@3.0.1` |
+| Supported Node.js | `See supported framework requirements` |
+| License | `MIT` |
+| Module type | `module` |
+| Main entry | `index.js` |
+| Types | `index.d.ts` |
+| Runtime dependencies | `vfile, vfile-message` |
+
+## Installation
+
+```bash
 npm install @stackline/vfile-sort
-# Keep existing imports:
-npm install vfile-sort@npm:@stackline/vfile-sort@1.0.0
 ```
 
-[Stackline](https://alexandro.net/) · [Issues](https://github.com/alexandroit/stackline-vfile-sort/issues) · [Community](https://www.reddit.com/r/Stackline/)
+Preserve existing imports and plugin resolution with an npm alias:
 
-See [UPSTREAM.md](UPSTREAM.md) for source identity and issue review, and [CHANGELOG.md](CHANGELOG.md) for maintenance changes. Functional tests also run against the final npm tarball; releases are published from GitHub Actions with provenance.
+```bash
+npm install vfile-sort@npm:@stackline/vfile-sort
+```
 
-## Upstream documentation
+## Usage and API reference
 
-# vfile-sort
+### vfile-sort
 
-[![Build][build-badge]][build]
-[![Coverage][coverage-badge]][coverage]
-[![Downloads][downloads-badge]][downloads]
-[![Size][size-badge]][size]
-[![Sponsors][sponsors-badge]][collective]
-[![Backers][backers-badge]][collective]
-[![Chat][chat-badge]][chat]
 
 [`vfile`][vfile] utility to sort messages.
 
@@ -59,7 +83,7 @@ This package is [ESM only][esm].
 In Node.js (version 14.14+ and 16.0+), install with [npm][]:
 
 ```sh
-npm install vfile-sort
+npm install @stackline/vfile-sort
 ```
 
 In Deno with [`esm.sh`][esmsh]:
@@ -80,7 +104,7 @@ In browsers with [`esm.sh`][esmsh]:
 
 ```js
 import {VFile} from 'vfile'
-import {sort} from 'vfile-sort'
+import {sort} from '@stackline/vfile-sort'
 
 const file = VFile()
 
@@ -137,7 +161,7 @@ abide by its terms.
 
 [MIT][license] © [Titus Wormer][author]
 
-<!-- Definitions -->
+
 
 [build-badge]: https://github.com/vfile/vfile-sort/workflows/main/badge.svg
 
@@ -188,3 +212,22 @@ abide by its terms.
 [vfile]: https://github.com/vfile/vfile
 
 [api-sort]: #sortfile
+
+## Credits and original authors
+
+- Original project: [vfile-sort](https://github.com/vfile/vfile-sort).
+- Titus Wormer.
+- Copyright (c) 2015 Titus Wormer <tituswormer@gmail.com>.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
